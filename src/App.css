@@ -1,0 +1,1357 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5f7;
+  color: #4a1f2a;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  background: white;
+  border-bottom: 1px solid #f0dce1;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c94f6d;
+  transition: 0.2s ease;
+}
+
+.logo:hover {
+  color: #7d263d;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #6b3444;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #c94f6d;
+}
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+  text-align: center;
+}
+
+.hero {
+  padding: 80px 20px 50px;
+}
+
+.welcome {
+  font-size: 18px;
+  color: #c94f6d;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 20px 0;
+  color: #4a1f2a;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #79515d;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Main button */
+
+.journal-btn {
+  display: inline-block;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #c94f6d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.journal-btn:hover {
+  background: #a83d58;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HOME MOOD
+========================= */
+
+.mood-section {
+  padding: 30px 20px 80px;
+}
+
+.moods {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.moods button {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #f0dce1;
+  border-radius: 50%;
+  background: #fff0f3;
+  font-size: 28px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.moods button:hover {
+  border-color: #c94f6d;
+  background: #ffe1e8;
+  transform: scale(1.05);
+}
+
+.selected-mood {
+  margin-top: 25px;
+  color: #c94f6d;
+  font-size: 18px;
+}
+
+/* =========================
+   JOURNAL PAGE
+========================= */
+
+.journal-page {
+  min-height: 500px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.journal-page h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #4a1f2a;
+}
+
+.journal-page > p {
+  color: #79515d;
+  margin-bottom: 30px;
+}
+
+.journal-page form {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.journal-page textarea {
+  width: 100%;
+  min-height: 220px;
+  padding: 18px;
+  border: 1px solid #ead3d9;
+  border-radius: 15px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  background: white;
+  color: #4a1f2a;
+}
+
+.journal-page textarea:focus {
+  border-color: #c94f6d;
+  box-shadow: 0 0 0 3px #ffe1e8;
+}
+
+.journal-page form button {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #c94f6d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.journal-page form button:hover {
+  background: #a83d58;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   JOURNAL ENTRIES
+========================= */
+
+.entries {
+  display: block;
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.entry-card {
+  display: block;
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border: 1px solid #ead3d9;
+  text-align: left;
+}
+
+.entry-card p {
+  display: block;
+  color: #4a1f2a;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.entry-card button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #c94f6d;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.entry-card button:hover {
+  background: #a83d58;
+  transform: translateY(-2px);
+}
+
+.entry-card small {
+  display: block;
+  color: #9a6d79;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   MOOD TRACKER
+========================= */
+
+.mood-page {
+  min-height: 500px;
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff0f3;
+}
+
+.mood-page h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #4a1f2a;
+}
+
+.mood-page > p {
+  color: #79515d;
+  margin-bottom: 30px;
+}
+
+.mood-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mood-options button {
+  width: 110px;
+  height: 110px;
+  border: 1px solid #ead3d9;
+  border-radius: 15px;
+  background: white;
+  color: #4a1f2a;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.mood-options button span:first-child {
+  font-size: 35px;
+}
+
+.mood-options button:hover {
+  border-color: #c94f6d;
+  background: #ffe8ed;
+  transform: translateY(-3px);
+}
+
+.mood-message {
+  margin-top: 30px;
+  color: #c94f6d !important;
+  font-size: 18px;
+}
+
+/* =========================
+   MOOD HISTORY
+========================= */
+
+.mood-history {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto 0;
+}
+
+.mood-history h2 {
+  margin-bottom: 20px;
+  color: #4a1f2a;
+}
+
+.mood-history-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #ead3d9;
+  text-align: left;
+}
+
+.mood-history-card span {
+  font-size: 30px;
+}
+
+.mood-history-card strong {
+  font-size: 17px;
+  color: #6b3444;
+}
+
+.mood-history-card small {
+  margin-left: auto;
+  color: #9a6d79;
+}
+
+.mood-history-card button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #f8dce3;
+  color: #7d263d;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.mood-history-card button:hover {
+  background: #f2c5d0;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   MOOD STATISTICS
+========================= */
+
+.mood-statistics {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.mood-statistics h2 {
+  margin-bottom: 25px;
+  color: #4a1f2a;
+}
+
+.mood-stats {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.mood-stat-card {
+  width: 120px;
+  padding: 20px 10px;
+  background: white;
+  border: 1px solid #ead3d9;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.mood-stat-card span {
+  font-size: 32px;
+}
+
+.mood-stat-card strong {
+  font-size: 24px;
+  color: #c94f6d;
+}
+
+.mood-stat-card small {
+  color: #79515d;
+  font-size: 14px;
+}
+
+.mood-count {
+  color: #79515d;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+  min-height: 500px;
+  padding-bottom: 70px;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 70px 20px 50px;
+}
+
+.about-label {
+  color: #c94f6d;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: #4a1f2a;
+}
+
+.about-intro {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #79515d;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.about-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #4a1f2a;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  color: #79515d;
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   ABOUT CARDS
+========================= */
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-card {
+  padding: 25px;
+  background: white;
+  border: 1px solid #ead3d9;
+  border-radius: 15px;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  border-color: #e1a8b8;
+}
+
+.about-card h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #7d263d;
+}
+
+.about-card p {
+  color: #79515d;
+  line-height: 1.6;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.tech-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tech-list span {
+  padding: 10px 18px;
+  background: white;
+  border: 1px solid #ead3d9;
+  border-radius: 20px;
+  color: #c94f6d;
+  font-size: 14px;
+}
+
+/* =========================
+   ABOUT NOTE
+========================= */
+
+.about-note {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff0f3;
+  border: 1px solid #f0dce1;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.about-note h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #7d263d;
+}
+
+.about-note p {
+  color: #79515d;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #7d263d;
+  color: white;
+  margin-top: 60px;
+}
+
+.footer-content {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 50px;
+}
+
+.footer-brand h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.footer-brand p {
+  color: #f5dfe5;
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+.footer-links,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-contact a {
+  text-decoration: none;
+  color: #f5dfe5;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #a84a63;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #edcbd4;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 50px 20px 30px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .moods {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .mood-options {
+    gap: 10px;
+  }
+
+  .mood-history-card {
+    flex-wrap: wrap;
+  }
+
+  .mood-history-card small {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .mood-history-card button {
+    margin-left: auto;
+  }
+
+  .journal-page textarea {
+    min-height: 180px;
+  }
+
+  .about-page {
+    padding: 50px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 34px;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+  }
+
+  .about-note {
+    padding: 25px 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin: 0 auto;
+  }
+
+  .footer-links,
+  .footer-contact {
+    align-items: center;
+  }
+}
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-page {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  border-radius: 24px;
+  background: white;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-logo {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.auth-card h1 {
+  margin-bottom: 10px;
+}
+
+.auth-subtitle {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-card label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.auth-message {
+  margin-top: 18px;
+}
+
+.auth-switch {
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.switch-auth {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+/* =========================
+   JOURNAL PAGE
+========================= */
+
+.journal-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.journal-page h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.journal-page > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+/* Journal form */
+
+.journal-page form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.journal-page textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 180px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+.journal-page textarea:focus {
+  border-color: #d66a7a;
+  box-shadow: 0 0 0 3px rgba(214, 106, 122, 0.12);
+}
+
+.journal-page form button {
+  margin-top: 15px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #d66a7a;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.journal-page form button:hover {
+  transform: translateY(-2px);
+}
+
+/* Journal entries */
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.entry-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.entry-card small {
+  color: #888;
+  font-size: 13px;
+}
+
+.entry-card > p {
+  line-height: 1.7;
+  color: #333;
+  margin: 15px 0 20px;
+  white-space: pre-wrap;
+}
+
+/* Entry buttons */
+
+.entry-card button {
+  padding: 10px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.entry-card button:hover {
+  transform: translateY(-1px);
+}
+
+.entry-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* AI Insight */
+
+.ai-analysis {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background: #f8f5ff;
+  border-left: 5px solid #8b72c7;
+}
+
+.ai-analysis h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #5f4a91;
+}
+
+.ai-analysis p {
+  color: #444;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+/* Delete button */
+
+.entry-card button:last-child {
+  background: #f5eeee;
+  color: #b44b5c;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .journal-page {
+    padding: 40px 15px;
+  }
+
+  .journal-page h1 {
+    font-size: 30px;
+  }
+
+  .journal-page form,
+  .entry-card {
+    padding: 18px;
+  }
+
+  .journal-page textarea {
+    min-height: 150px;
+  }
+
+  .entry-card button {
+    margin-bottom: 8px;
+  }
+
+}
+ /* =========================
+    MOOD TRACKER
+ ========================= */
+
+.mood-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.mood-page > h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.mood-page > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+/* Mood selection */
+
+.mood-selector {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mood-selector h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.mood-options {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.mood-options button {
+  width: 95px;
+  height: 95px;
+  border: 2px solid #eee;
+  border-radius: 18px;
+  background: #fafafa;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.mood-options button:hover {
+  transform: translateY(-4px);
+  border-color: #d66a7a;
+}
+
+.mood-options button.selected-mood {
+  border-color: #d66a7a;
+  background: #fff1f4;
+}
+
+.mood-emoji {
+  font-size: 32px;
+}
+
+.mood-message {
+  margin-top: 25px;
+  color: #555;
+}
+
+/* Chart */
+
+.mood-chart {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  margin-bottom: 30px;
+}
+
+.mood-chart h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.mood-chart > p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
+
+/* History */
+
+.mood-history {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.mood-history h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.mood-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mood-history-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.mood-history-card > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.history-emoji {
+  font-size: 28px;
+}
+
+.mood-history-card strong {
+  min-width: 70px;
+}
+
+.mood-history-card small {
+  color: #888;
+}
+
+.mood-history-card button {
+  border: none;
+  background: #f5eeee;
+  color: #b44b5c;
+  padding: 8px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mood-history-card button:hover {
+  background: #f0dddd;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .mood-page {
+    padding: 40px 15px;
+  }
+
+  .mood-page > h1 {
+    font-size: 30px;
+  }
+
+  .mood-selector,
+  .mood-chart,
+  .mood-history {
+    padding: 20px;
+  }
+
+  .mood-options {
+    gap: 10px;
+  }
+
+  .mood-options button {
+    width: 75px;
+    height: 75px;
+  }
+
+  .mood-emoji {
+    font-size: 26px;
+  }
+
+  .mood-history-card {
+    align-items: flex-start;
+  }
+
+  .mood-history-card > div {
+    flex-wrap: wrap;
+  }
+
+  .mood-history-card small {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+}
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Hero */
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  margin: 0 0 12px;
+}
+
+.about-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Cards */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.about-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about-card > p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Features */
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #fafafa;
+}
+
+.feature-item > span {
+  font-size: 30px;
+}
+
+.feature-item h3 {
+  margin: 0 0 5px;
+}
+
+.feature-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Tech stack */
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tech-stack span {
+  padding: 9px 16px;
+  border-radius: 20px;
+  background: #fff1f4;
+  color: #a64f61;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Bottom message */
+
+.about-note {
+  text-align: center;
+  margin-top: 45px;
+  padding: 35px 20px;
+}
+
+.about-note h2 {
+  margin-bottom: 10px;
+}
+
+.about-note p {
+  color: #777;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .about-page {
+    padding: 40px 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .feature-item {
+    padding: 13px;
+  }
+
+}
