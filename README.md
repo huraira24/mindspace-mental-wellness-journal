@@ -1,16 +1,79 @@
-# React + Vite
+# 🌿 MindSpace — Mental Wellness Journal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MindSpace is a web-based mental wellness journal that provides a private space to **journal thoughts, track moods, and receive AI-powered reflections**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🔐 **Firebase Authentication** — Secure login and signup with protected routes.
+* 📝 **Personal Journal** — Create, view, and delete journal entries.
+* 🤖 **AI Journal Insights** — Gemini AI analyzes journal entries for emotions, key themes, gentle reflections, and wellness suggestions.
+* 😊 **Mood Tracker** — Record and manage daily moods.
+* 📊 **Mood Visualization** — View mood patterns over time using Recharts.
+* ☁️ **Firestore Database** — Stores user-specific journal and mood data securely.
+* 📱 **Responsive UI** — Works across desktop and mobile devices.
 
-## React Compiler
+> **Note:** MindSpace is a wellness and self-reflection tool and does not provide medical diagnosis or professional medical advice.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend:** React.js, JavaScript, HTML, CSS, React Router, Recharts
+**Backend:** Node.js, Express.js
+**Database & Auth:** Firebase Authentication, Firestore
+**AI:** Google Gemini API
+**Tools:** Vite, Git, GitHub, VS Code
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Project Structure
+
+```text
+mindspace-mental-wellness-journal/
+├── server/          # Express backend & Gemini integration
+├── src/
+│   ├── components/  # Navbar, Footer, ProtectedRoute
+│   ├── pages/       # Home, Journal, Mood Tracker, Auth, About
+│   ├── firebase.js  # Firebase configuration
+│   └── App.jsx
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/huraira24/mindspace-mental-wellness-journal.git
+cd mindspace-mental-wellness-journal
+npm install
+npm run dev
+```
+
+For the backend:
+
+```bash
+cd server
+npm install
+node server.js
+```
+
+Create `server/.env` and add:
+
+```text
+GEMINI_API_KEY=your_api_key
+```
+
+**Never commit API keys to GitHub.**
+
+## 📸 Screenshots
+
+*Add screenshots of the Home, Journal, AI Insights, and Mood Tracker pages here.*
+
+## 🚀 Future Enhancements
+
+* Calendar-based journal
+* Advanced mood analytics
+* Dark mode
+* Voice journaling
+* Personalized AI insights
+
+---
+
+**Built with React, Firebase, Express.js, Gemini AI, and Recharts. 🌿**
