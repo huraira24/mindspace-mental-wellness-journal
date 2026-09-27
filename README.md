@@ -37,34 +37,8 @@ mindspace-mental-wellness-journal/
 └── README.md
 ```
 
-## ⚙️ Run Locally
+## 🌐 Live Demo
 
-```bash
-git clone https://github.com/huraira24/mindspace-mental-wellness-journal.git
-cd mindspace-mental-wellness-journal
-npm install
-npm run dev
-```
-
-For the backend:
-
-```bash
-cd server
-npm install
-node server.js
-```
-
-Create `server/.env` and add:
-
-```text
-GEMINI_API_KEY=your_api_key
-```
-
-**Never commit API keys to GitHub.**
-
-## 📸 Screenshots
-
-*Add screenshots of the Home, Journal, AI Insights, and Mood Tracker pages here.*
 
 ## 🚀 Future Enhancements
 
