@@ -21,6 +21,7 @@ MindSpace is a web-based mental wellness journal that provides a private space t
 **Database & Auth:** Firebase Authentication, Firestore
 **AI:** Google Gemini API
 **Tools:** Vite, Git, GitHub, VS Code
+<<<<<<< HEAD
 
 ## 🏗️ Project Structure
 
@@ -51,3 +52,34 @@ mindspace-mental-wellness-journal/
 ---
 
 **Built with React, Firebase, Express.js, Gemini AI, and Recharts. 🌿**
+=======
+
+## 🏗️ Project Structure
+
+```text
+mindspace-mental-wellness-journal/
+├── server/          # Express backend & Gemini integration
+├── src/
+│   ├── components/  # Navbar, Footer, ProtectedRoute
+│   ├── pages/       # Home, Journal, Mood Tracker, Auth, About
+│   ├── firebase.js  # Firebase configuration
+│   └── App.jsx
+├── .gitignore
+├── package.json
+└── README.md
+```
+## 🌐 Live Demo
+
+## 🚀 Future Enhancements
+
+* Calendar-based journal
+* Advanced mood analytics
+* Dark mode
+* Voice journaling
+* Personalized AI insights
+
+---
+
+**Built with React, Firebase, Express.js, Gemini AI, and Recharts. 🌿**
+
+>>>>>>> 5e7eb03 (Update project README)
