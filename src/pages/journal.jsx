@@ -97,7 +97,7 @@ function Journal() {
     try {
       setAnalyzingId(entry.id);
 
-      const response = await fetch("http://localhost:5000/analyze", {
+      const response = await fetch("https://mindspace-mental-wellness-journal.onrender.com/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
