@@ -39,7 +39,7 @@ mindspace-mental-wellness-journal/
 ```
 
 ## 🌐 Live Demo
-
+mindspace-mental-wellness-journal-q.vercel.app
 
 ## 🚀 Future Enhancements
 
