@@ -54,32 +54,3 @@ mindspace-mental-wellness-journal-q.vercel.app
 **Built with React, Firebase, Express.js, Gemini AI, and Recharts. 🌿**
 =======
 
-## 🏗️ Project Structure
-
-```text
-mindspace-mental-wellness-journal/
-├── server/          # Express backend & Gemini integration
-├── src/
-│   ├── components/  # Navbar, Footer, ProtectedRoute
-│   ├── pages/       # Home, Journal, Mood Tracker, Auth, About
-│   ├── firebase.js  # Firebase configuration
-│   └── App.jsx
-├── .gitignore
-├── package.json
-└── README.md
-```
-## 🌐 Live Demo
-
-## 🚀 Future Enhancements
-
-* Calendar-based journal
-* Advanced mood analytics
-* Dark mode
-* Voice journaling
-* Personalized AI insights
-
----
-
-**Built with React, Firebase, Express.js, Gemini AI, and Recharts. 🌿**
-
->>>>>>> 5e7eb03 (Update project README)
