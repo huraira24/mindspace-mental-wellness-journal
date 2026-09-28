@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ProtectedRoute from "./components/ProtectedRoute";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import ProtectedRoute from "./components/protectedroute";
 
 import Home from "./pages/home";
 import Journal from "./pages/journal.jsx";
